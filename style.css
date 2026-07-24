@@ -469,3 +469,77 @@ transition:.35s;
 transition:1s;
 
 }
+/* ===================
+Footer
+=================== */
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+background:#090909;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===================
+Responsive
+=================== */
+
+@media(max-width:900px){
+
+header{
+
+padding:20px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+.hero{
+
+padding:30px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+}
+
+.hero-btn{
+
+flex-direction:column;
+
+}
+
+}
+
+/* ===================
+Custom Cursor
+=================== */
+
+.cursor{
+
+position:fixed;
+width:18px;
+height:18px;
+background:#ff1e3c;
+border-radius:50%;
+pointer-events:none;
+transform:translate(-50%,-50%);
+box-shadow:
+0 0 15px red,
+0 0 35px red,
+0 0 60px red;
+z-index:99999;
+
+}
