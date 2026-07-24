@@ -135,45 +135,65 @@ p{
 
 }
 
-/* Loader */
+/* =========================================
+   LOADER
+========================================= */
 
 #loader{
 
     position:fixed;
 
     top:0;
-
     left:0;
 
     width:100%;
+    height:100vh;
 
-    height:100%;
-
-    background:black;
+    background:#050505;
 
     display:flex;
 
     justify-content:center;
-
     align-items:center;
 
     z-index:999999;
+
+    transition:1s;
 
 }
 
 #loader h1{
 
-    color:var(--red);
+    font-size:60px;
+
+    color:#ff1f3d;
 
     letter-spacing:8px;
 
-    text-shadow:
+    animation:loaderGlow 1.5s infinite alternate;
 
-    0 0 10px red,
+}
 
-    0 0 20px red,
+/* Loader Animation */
 
-    0 0 40px red;
+@keyframes loaderGlow{
+
+    from{
+
+        text-shadow:
+        0 0 10px #ff1f3d,
+        0 0 20px #ff1f3d;
+
+    }
+
+    to{
+
+        text-shadow:
+        0 0 20px #ff1f3d,
+        0 0 40px #ff1f3d,
+        0 0 80px #ff1f3d;
+
+    }
 
 }
 /* =========================================
