@@ -1,1 +1,219 @@
+/* ========================================
+   TOURNAMENT SECTION
+======================================== */
 
+.tournament{
+
+    padding:100px 8%;
+
+    background:#050505;
+
+}
+
+.tournament h2{
+
+    text-align:center;
+
+    font-size:45px;
+
+    margin-bottom:50px;
+
+    color:#ffffff;
+
+    letter-spacing:3px;
+
+}
+
+/* Tournament Box */
+
+.tournament-box{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    backdrop-filter:blur(15px);
+
+    transition:.4s;
+
+}
+
+.tournament-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 0 25px rgba(255,31,61,.4),
+
+    0 0 60px rgba(255,31,61,.2);
+
+}
+
+/* Left */
+
+.tournament-left{
+
+    flex:1;
+
+}
+
+.tournament-left h3{
+
+    font-size:35px;
+
+    color:#ff1f3d;
+
+    margin-bottom:15px;
+
+}
+
+.tournament-left p{
+
+    color:#cccccc;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+/* Prize */
+
+.prize{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#ffffff;
+
+}
+
+/* Right */
+
+.tournament-right{
+
+    text-align:center;
+
+}
+
+/* Timer */
+
+.timer{
+
+    display:flex;
+
+    gap:15px;
+
+    justify-content:center;
+
+    margin-bottom:25px;
+
+}
+
+.time-box{
+
+    width:80px;
+
+    height:80px;
+
+    background:#111;
+
+    border-radius:12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.time-box h4{
+
+    font-size:28px;
+
+    color:#ff1f3d;
+
+}
+
+.time-box span{
+
+    font-size:12px;
+
+    color:#aaa;
+
+}
+
+/* Button */
+
+.register-btn{
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#ff1f3d;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.register-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 0 20px #ff1f3d,
+
+    0 0 40px rgba(255,31,61,.5);
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.tournament-box{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.timer{
+
+flex-wrap:wrap;
+
+}
+
+}
