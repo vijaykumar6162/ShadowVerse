@@ -1,21 +1,59 @@
 /* =========================================
-   Reveal Animation
+   HERO ANIMATION
 ========================================= */
 
-.hidden{
+.hero-content{
 
-    opacity:0;
-
-    transform:translateY(80px);
-
-    transition:1s ease;
+    transition:1.2s;
 
 }
 
-.show{
+/* Glow Animation */
 
-    opacity:1;
+.glow{
 
-    transform:translateY(0);
+    text-shadow:
+
+    0 0 15px #ff1f3d,
+
+    0 0 35px #ff1f3d,
+
+    0 0 70px #ff1f3d;
+
+}
+
+/* Floating Animation */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.hero-buttons button{
+
+    animation:floating 3s infinite ease-in-out;
+
+}
+
+.hero-buttons button:last-child{
+
+    animation-delay:1s;
 
 }
