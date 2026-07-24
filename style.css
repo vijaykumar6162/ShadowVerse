@@ -434,3 +434,38 @@ flex-direction:column;
 }
 
 }
+/* Reveal Animation */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Button */
+
+button{
+
+transition:.35s;
+
+}
+
+/* Loader */
+
+#loader{
+
+transition:1s;
+
+}
